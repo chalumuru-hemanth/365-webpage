@@ -1,0 +1,187 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+*{
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+.weblogo{
+    height: 45px;
+    border-radius: 4px;
+    background: white;
+    filter: drop-shadow(0px 7px 10px black);
+}
+
+.nav{
+    height: 60px;
+    line-height: 20px;
+    background: linear-gradient(90deg,#f0e151,#88fbfc);
+    background-size: 400%;
+    animation:animate 5s linear infinite alternate;
+    display: flex;
+    align-items: center;
+}
+
+@keyframes animate{
+    0%{
+        background-position: left;
+    }
+    
+    100%{
+        background-position: right;
+    }
+}
+.nav li {
+    display: inline-block;
+}
+.nav a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding:0px 22px;
+    margin: 1px;
+    text-align:start ;
+
+}
+a:hover{
+    color: #A29B99;
+}
+.nav ul{
+    list-style: none;
+    text-align: right;
+}
+.media img{
+    height: 550px;
+    width: 1290px;
+}
+button{
+    color: white;
+    background-color: transparent;
+    font-size: 30px;
+    height: 50px;
+    width: 40px;
+    border: none;
+    border-radius: 2px;
+}
+.arrow1{
+    position:absolute;
+    top: 300px;
+    left: 0px;
+}
+.arrow2{
+    position:absolute;
+    top: 300px;
+    left: 1240px;
+}
+    button:hover{
+    background-color: white;
+    color: black;
+    transition: all 1s;
+}
+h2{
+    line-height: 100px;
+    margin-left: 20px;
+    margin-bottom: -40px;
+}
+
+.heading1{
+    color: white;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: 20px;
+    font-size: 20px;
+    letter-spacing: 0px;
+}
+hr{
+    border: none;
+    height: 1px;
+    margin: 20px;
+    
+}
+.poster{
+    margin: 20px;
+    letter-spacing: 10px;
+}
+.sq{
+    height: 190px;
+    width: 190px;
+}
+h4{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 0px;
+}
+
+
+
+
+.bar{
+    display:inline-flex;
+}
+
+.genre{
+    margin: 30px;
+    border: 20px;
+}
+
+.searchbox{
+    
+    margin: 30px;
+    border: 20px;
+    background-color: yellow;
+    width: 800px;
+    border: 20px black;
+    height: 30px;
+    right: 40px;
+    text-align: center;
+}
+.searchbox input{
+    width: 800px;
+    height: 30px;
+    background-color: transparent;
+}
+select{
+    height: 30px;
+    background-color: yellow;
+    height: 30px;
+    width: 140px;
+    line-height: 40px;
+}
+option{
+    text-align: left;
+    font-size: 20px;
+    background-color: white;
+}
+#media-carousel-container {
+    margin: 10px 40px 40px 40px;
+}
+#media-holder-action, #media-holder-drama, #media-holder-scifi {
+    clear: both;
+}
+#image-container-action, #image-container-drama, #image-container-scifi {
+    height: 250px;
+}
+.media-carousel, .media-carousel-movies {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 10px 5px;
+    float: left;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    text-align: center;
+}
